@@ -5,6 +5,8 @@
 // @description  Hides usernames and scores on LessWrong.
 // @author       Marello Herreshoff
 // @match        *://www.lesswrong.com/*
+// @match        *://forum.effectivealtruism.org/*
+// @match        *://www.alignmentforum.org/*
 // @grant        none
 // @require      https://code.jquery.com/jquery-3.5.1.min.js
 // ==/UserScript==
