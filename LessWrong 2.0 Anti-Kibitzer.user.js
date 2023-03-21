@@ -56,7 +56,8 @@ function censorship_sweep() {
         });
     }
     update_censor_text(".UsersNameDisplay-userName", colorful_censor_bar, false);
-    update_censor_text(".NotificationsItem-notificationLabel", notification_censor_bar, false);
+    // Get notification elements, except tag subscription notfications which cause an error and don't need to be censored
+    update_censor_text(".NotificationsItem-notificationLabel:not(:has(.TagRelNotificationItem-root))", notification_censor_bar, false);
     update_censor_text(".PostsVote-voteScore", vote_censor_bar, true);
 
     // Evan: Fixing vote score and user stats hiding
